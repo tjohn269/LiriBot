@@ -10,6 +10,9 @@ var datainput = process.argv.slice(3,process.argv.length+1).join(" ")
     case "concert-this":
     console.log(chalk.g("CONCERT THIS"));
     var app = new app();
+    if(!datainput){
+        datainput ="Big Sean";
+    }
     app.concert(datainput)
     break;
 

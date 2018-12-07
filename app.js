@@ -24,7 +24,9 @@ var AppRunner = function(){
    
                console.log(chalk.g("\nVenue: "+venueName+"\nCity: "+venueLoc+"\nDate: "+venueTime));
             });
-        });
+        })
+        .catch(function(err){
+            console.log(err)});
     }
     this.spot = function(song){
 
